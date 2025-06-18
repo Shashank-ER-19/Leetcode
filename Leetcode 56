@@ -1,0 +1,14 @@
+Ninestars pentagaon 17/06/2025
+
+
+intervals.sort(key:lambda x:x[0])
+res=[]
+a,b=intervals[0]
+for c,d in intervals[1::]:
+  if c>=a and c<=b:
+    b=max(c,b)
+  else:
+    res.append([a,b])
+    a,b=c,d
+  res.append([a,b])
+  return res
