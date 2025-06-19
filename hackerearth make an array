@@ -1,0 +1,7 @@
+19/06/2025
+
+def sol(N,A):
+  if sum(A)/(N-1)!=0 or max(A)>sum(A)//(N-1):
+    return -1
+  else:
+    return sum(A)//(N-1)
