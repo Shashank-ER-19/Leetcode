@@ -1,0 +1,14 @@
+20/06/2025
+
+def gen(n):
+  res=[]
+  def bt(cur,o,c):
+    if len(cur)==2*n:
+      res.append(cur)
+      return
+    if o<n:
+      bt(cur+"(",o+1,c)
+    if c<o:
+      bt(cur+")",o,c+1)
+  bt("",0,0)
+  return res
