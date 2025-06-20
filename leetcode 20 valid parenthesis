@@ -1,0 +1,14 @@
+20/06/2025
+
+def pro(s):
+  m={")":"(","}":"{","]":"["}
+  stack=[]
+  for i in s:
+    if i in m.values:
+      stack.append(i)
+    elif i in m:
+      if not stack or stack.pop()!=m[i]:
+        return False
+    else:
+        return False
+  return not stack
