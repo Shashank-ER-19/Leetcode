@@ -1,0 +1,11 @@
+Leetcode 13 Roman to int
+
+create a dict :  d={"I":1,"V":5,"X":10,"L":50,"C":100,"D":500,"M":1000}
+var for result-->res
+loop over string till len(s)-1:
+    if d.get(d[i])<d.get(d[i+1]):
+        res-=d.get(d[i])
+    else:
+        res+=d.get(d[i])
+res+=d.get(d[-1])
+return res
