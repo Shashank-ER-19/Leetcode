@@ -1,0 +1,8 @@
+Leetcode 392 subsequence
+
+if t is empty but not s OR len(s)>len(t)-->return False
+2 var i,j =0
+while loop with cond i<len(s) and j<len(t): 
+      check s[i]==t[j]:  i+=1
+  j+=1 each time
+return i==len(s)
