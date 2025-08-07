@@ -1,0 +1,9 @@
+Leetcode 14 Longest prefix
+
+a var
+sort list
+loop over the length of List[0]:
+    compare char of List[0] and List[-1]
+          res+=that char
+    else: break
+return res
